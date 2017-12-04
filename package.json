@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio for assignment 2 of SWD500",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickallama/swd500-responsive-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickallama/swd500-responsive-website/issues"
+  },
+  "homepage": "https://github.com/nickallama/swd500-responsive-website#readme",
+  "dependencies": {
+    "firebase": "^4.7.0",
+    "sass": "^1.0.0-beta.3",
+    "vee-validate": "^2.0.0-rc.25",
+    "vue": "^2.5.9",
+    "vuefire": "^1.4.4"
+  }
+}
