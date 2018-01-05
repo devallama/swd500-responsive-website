@@ -9,11 +9,7 @@ $tablet_break: 768px;
 body {
   padding: 0;
   margin: 0;
-}
-
-#wrap {
-  width: 90vw;
-  margin: 10px auto;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* For creating responsive grid */
@@ -56,3 +52,72 @@ body {
 @media screen and (max-width: $mobile-break) {
 
 }
+
+.purple {
+  color: #ff17e1;
+}
+
+nav {
+  overflow: auto;
+  width: 100vw;
+}
+
+/* Home */
+
+#nav_right {
+  list-style: none;
+  float: right;
+  width: 50%;
+  text-align: right;
+  padding: 10px 20px;
+  
+  li {
+    display: inline;
+  }
+
+  img {
+    height: 32px;
+    padding: 0 20px;
+  }
+}
+
+main#home {
+  background-image: url(../imgs/bg.png);
+  background-size: cover;  
+  height: 80vh;
+  width: 100vw;
+  color: #fff;
+
+  .text_overlay {
+    padding-top: 30vh;
+    padding-left: 10vw;
+    margin: 0;
+
+    h1 {
+      margin: 2rem 0;
+      padding: 0;
+      font-weight: 200;
+      font-style: italic;
+    }
+  }
+}
+
+nav#nav_bottom {
+  list-style: none;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    border-bottom: 1px solid #ff17e1; 
+    padding: 20px 0;
+    margin: 0 4rem;
+
+    a {
+      text-decoration: none;
+      padding: 50px 0;
+      color: #424242;
+      font-size: 1.3rem;
+    }
+  }
+}
+
