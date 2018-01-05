@@ -1,0 +1,58 @@
+$max_width: 100%;
+$half_width: 50%;
+$max_cols: 18;
+$single_col: $max_width / $max_cols;
+
+$mobile_break: 480px;
+$tablet_break: 768px;
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#wrap {
+  width: 90vw;
+  margin: 10px auto;
+}
+
+/* For creating responsive grid */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.row {
+  content: "";
+  clear: both;
+  display: block;
+  overflow: auto;
+  margin: auto auto;
+}
+
+[class*='col-'] {
+  float: left;
+  height: 100px;
+  border: 2px solid #ffffff;
+}
+
+@for $i from 1 through $max_cols {
+  .col-#{$i} {
+    width: $single_col * $i;
+  }
+  
+  .offset-#{$i} {
+    margin-left: $single_col * $i;
+  }
+}
+
+/* Break points */
+@media screen and (max-width: $tablet-break) {
+
+}
+
+@media screen and (max-width: $mobile-break) {
+
+}
