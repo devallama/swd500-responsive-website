@@ -130,27 +130,80 @@ body {
   margin-left: 100%; }
 
 /* Break points */
+p {
+  font-size: 1rem;
+  line-height: 2rem; }
+
+h1 {
+  font-weight: 400;
+  margin-bottom: 2.5rem; }
+
+h2 {
+  text-align: center; }
+
 .purple {
   color: #ff17e1; }
 
+.underline {
+  border-bottom: 8px solid #ff17e1; }
+
+.serif {
+  font-family: 'Lora', serif; }
+
 nav {
   overflow: auto;
-  width: 100vw; }
+  background-color: #4f4f4f; }
+  nav ul {
+    list-style: none;
+    padding: 0; }
+    nav ul li {
+      display: inline-block; }
+  nav #nav_left {
+    width: 50%;
+    float: left;
+    font-size: 1.3rem; }
+    nav #nav_left li {
+      padding: 1.2rem 0;
+      margin: 0 1rem; }
+    nav #nav_left a {
+      color: #ffffff;
+      font-variant: small-caps;
+      text-decoration: none; }
+  nav #nav_right {
+    list-style: none;
+    float: right;
+    width: 50%;
+    text-align: right; }
+    nav #nav_right li {
+      display: inline; }
+    nav #nav_right img {
+      height: 32px;
+      padding: 0 20px; }
+
+.flex_container {
+  display: flex; }
+
+footer {
+  background-color: #282828;
+  color: #ffffff;
+  text-align: center;
+  padding: 5vh; }
+  footer ul {
+    list-style: none;
+    padding: 0; }
+    footer ul li {
+      display: inline-block; }
+  footer h6 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lora', serif; }
 
 /* Home */
-#nav_right {
-  list-style: none;
-  float: right;
-  width: 50%;
-  text-align: right;
-  padding: 10px 20px; }
-  #nav_right li {
-    display: inline; }
-  #nav_right img {
-    height: 32px;
-    padding: 0 20px; }
+.home_nav {
+  background-color: #ffffff; }
 
 main#home {
+  margin: 0;
   background-image: url(../imgs/bg.png);
   background-size: cover;
   height: 80vh;
@@ -179,5 +232,31 @@ nav#nav_bottom {
       padding: 50px 0;
       color: #424242;
       font-size: 1.3rem; }
+
+/* About page */
+main {
+  margin: 4vh 10vw; }
+
+#about p {
+  overflow: auto; }
+  #about p img {
+    float: left;
+    margin: 0 1.4rem; }
+#about #skills {
+  align-items: baseline;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap; }
+  #about #skills .box {
+    margin: 0 3rem 3rem 3rem; }
+    #about #skills .box img {
+      width: 100px;
+      height: auto;
+      margin: 0 auto 2rem auto;
+      display: block; }
+
+.avatar {
+  height: 30vh;
+  max-height: 250px; }
 
 /*# sourceMappingURL=style.css.map */
