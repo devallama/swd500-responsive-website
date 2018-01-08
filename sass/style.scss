@@ -325,3 +325,33 @@ main {
     }
   }
 }
+
+/* Blog page */
+
+.card_blogpost {
+  width: 300px;
+  padding: 0 20px;
+
+  .card_blogpost_top {
+    position: relative;
+
+    .card_blogpost_image {
+      width: 100%;
+      overflow: hidden;
+      
+
+      img {
+        opacity: 0.3;
+        width: auto;
+        height: 300px;
+      }
+    }
+
+    .card_blogpost_title {
+      position: absolute;
+      top: 20px;
+      margin: 0 20px;
+      font-size: 1.3rem;
+    }
+  }
+}

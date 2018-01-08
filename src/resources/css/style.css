@@ -312,4 +312,23 @@ main {
     .socialmedia_links_big ul li img {
       height: 40px; }
 
+/* Blog page */
+.card_blogpost {
+  width: 300px;
+  padding: 0 20px; }
+  .card_blogpost .card_blogpost_top {
+    position: relative; }
+    .card_blogpost .card_blogpost_top .card_blogpost_image {
+      width: 100%;
+      overflow: hidden; }
+      .card_blogpost .card_blogpost_top .card_blogpost_image img {
+        opacity: 0.3;
+        width: auto;
+        height: 300px; }
+    .card_blogpost .card_blogpost_top .card_blogpost_title {
+      position: absolute;
+      top: 20px;
+      margin: 0 20px;
+      font-size: 1.3rem; }
+
 /*# sourceMappingURL=style.css.map */
