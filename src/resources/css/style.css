@@ -291,7 +291,8 @@ main {
 #form_contact textarea {
   height: 300px;
   resize: vertical; }
-#form_contact input[type="submit"] {
+
+input[type="submit"] {
   width: 120px;
   border: none;
   background-color: #282828;
@@ -299,7 +300,7 @@ main {
   border-radius: none;
   padding: 0.7rem 0;
   cursor: pointer; }
-  #form_contact input[type="submit"]:hover {
+  input[type="submit"]:hover {
     background-color: #424242; }
 
 .socialmedia_links_big ul {
@@ -330,5 +331,79 @@ main {
       top: 20px;
       margin: 0 20px;
       font-size: 1.3rem; }
+
+/* Blog post */
+main.blogpost {
+  overflow: auto;
+  margin: 0; }
+  main.blogpost section {
+    padding: 50px 10%;
+    float: left;
+    width: 70%;
+    font-family: 'Lora', serif; }
+    main.blogpost section h1, main.blogpost section h2 {
+      text-align: center; }
+    main.blogpost section h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.6rem; }
+    main.blogpost section h2 {
+      font-weight: 300;
+      font-size: 1.4rem;
+      margin-top: 0; }
+    main.blogpost section p {
+      line-height: 1.6rem; }
+    main.blogpost section img {
+      width: 100%; }
+    main.blogpost section .source {
+      display: block;
+      text-align: center;
+      font-style: italic; }
+    main.blogpost section .bold {
+      font-weight: bold; }
+    main.blogpost section .blogpost_info {
+      text-align: right;
+      font-style: italic;
+      font-weight: bold;
+      margin-top: 4rem; }
+  main.blogpost aside {
+    float: right;
+    width: 30%;
+    background-color: #c1c1c1;
+    padding-bottom: 15vh; }
+    main.blogpost aside h4 {
+      border-left: 8px solid #ff17e1;
+      display: block;
+      width: 60%;
+      margin: 2rem auto; }
+    main.blogpost aside .commentbox {
+      background-color: #ffffff;
+      width: 60%;
+      padding: 1rem;
+      margin: 0 auto;
+      overflow: auto; }
+      main.blogpost aside .commentbox textarea {
+        width: 100%;
+        border: none;
+        height: 100px;
+        resize: none; }
+      main.blogpost aside .commentbox input {
+        display: block;
+        float: right; }
+    main.blogpost aside .comments .comment_container {
+      margin: 2rem auto;
+      width: 60%;
+      background-color: #ffffff;
+      padding: 1rem; }
+      main.blogpost aside .comments .comment_container .comment_top {
+        overflow: auto; }
+        main.blogpost aside .comments .comment_container .comment_top .comment_top_author {
+          float: left;
+          text-transform: uppercase;
+          font-weight: bold; }
+        main.blogpost aside .comments .comment_container .comment_top .comment_top_time {
+          float: right;
+          font-style: italic; }
+    main.blogpost aside .comments .comment_content {
+      padding: 0.4rem; }
 
 /*# sourceMappingURL=style.css.map */
