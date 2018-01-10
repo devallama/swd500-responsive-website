@@ -133,7 +133,16 @@ body {
     display: none; }
 
   #nav_left {
-    width: calc(100% - 90px) !important; } }
+    width: calc(100% - 90px) !important; }
+
+  .blogpost section {
+    float: none !important;
+    width: 100% !important;
+    word-break: break-all; }
+  .blogpost aside {
+    padding-top: 2rem;
+    float: none !important;
+    width: 100% !important; } }
 @media screen and (max-width: 480px) {
   #nav-right {
     display: none; }
@@ -154,7 +163,13 @@ body {
     display: block !important;
     float: right;
     height: 26px;
-    margin: 20px; } }
+    margin: 20px; }
+
+  .commentbox {
+    width: 80% !important; }
+
+  .comment_container {
+    width: 80% !important; } }
 p {
   font-size: 1rem;
   line-height: 2rem; }
@@ -329,7 +344,7 @@ main {
   resize: vertical; }
 
 input[type="submit"] {
-  width: 120px;
+  width: 120px !important;
   border: none;
   background-color: #282828;
   color: #ffffff;
@@ -350,23 +365,35 @@ input[type="submit"] {
       height: 40px; }
 
 /* Blog page */
-.card_blogpost {
-  width: 300px;
-  padding: 0 20px; }
-  .card_blogpost .card_blogpost_top {
-    position: relative; }
-    .card_blogpost .card_blogpost_top .card_blogpost_image {
-      width: 100%;
-      overflow: hidden; }
-      .card_blogpost .card_blogpost_top .card_blogpost_image img {
-        opacity: 0.3;
-        width: auto;
-        height: 300px; }
-    .card_blogpost .card_blogpost_top .card_blogpost_title {
-      position: absolute;
-      top: 20px;
-      margin: 0 20px;
-      font-size: 1.3rem; }
+#container_blogpost {
+  align-items: baseline;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap; }
+  #container_blogpost .card_blogpost {
+    width: 300px;
+    padding: 0 20px; }
+    #container_blogpost .card_blogpost:hover h4 {
+      display: none; }
+    #container_blogpost .card_blogpost:hover p {
+      display: block; }
+    #container_blogpost .card_blogpost p {
+      display: none;
+      font-weight: bold; }
+    #container_blogpost .card_blogpost .card_blogpost_top {
+      position: relative; }
+      #container_blogpost .card_blogpost .card_blogpost_top .card_blogpost_image {
+        width: 100%;
+        overflow: hidden; }
+        #container_blogpost .card_blogpost .card_blogpost_top .card_blogpost_image img {
+          opacity: 0.3;
+          width: auto;
+          height: 300px; }
+      #container_blogpost .card_blogpost .card_blogpost_top .card_blogpost_title {
+        position: absolute;
+        top: 20px;
+        margin: 0 20px;
+        font-size: 1.3rem; }
 
 /* Blog post */
 main.blogpost {
