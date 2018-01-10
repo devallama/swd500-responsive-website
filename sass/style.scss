@@ -120,6 +120,10 @@ body {
 
   main {
     margin: 2vh 4vw!important;
+
+    &#home {
+      margin: 0!important;
+    }
   }
 
   .project {
@@ -134,6 +138,16 @@ body {
   
   [class*='col-'] { 
     width: 100%;
+  }
+
+  #about {
+    section {
+      img {
+        float: none!important;
+        display: block!important;
+        margin: 20px auto!important;
+      }
+    }
   }
 }
 
@@ -293,7 +307,6 @@ main#home {
   background-image: url(../imgs/bg.png);
   background-size: cover;  
   height: 75vh;
-  width: 100vw;
   color: #fff;
 
   .text_overlay {

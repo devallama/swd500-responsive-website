@@ -179,6 +179,8 @@ body {
 
   main {
     margin: 2vh 4vw !important; }
+    main#home {
+      margin: 0 !important; }
 
   .project h2 {
     text-align: center !important; }
@@ -186,7 +188,12 @@ body {
     padding: 0 20px !important; }
 
   [class*='col-'] {
-    width: 100%; } }
+    width: 100%; }
+
+  #about section img {
+    float: none !important;
+    display: block !important;
+    margin: 20px auto !important; } }
 p {
   font-size: 1rem;
   line-height: 2rem; }
@@ -294,7 +301,6 @@ main#home {
   background-image: url(../imgs/bg.png);
   background-size: cover;
   height: 75vh;
-  width: 100vw;
   color: #fff; }
   main#home .text_overlay {
     padding-top: 30vh;
