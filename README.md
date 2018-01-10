@@ -14,9 +14,9 @@ The aim of this project is to produce a 6-page website, in this case a portfolio
 
 2. Fetch the respority
 
-`git fetch origin`
+`git pull origin master`
 
-3. Created a new branch 
+3. Create a new branch 
 
 `git checkout -b [branch]`
 
@@ -39,6 +39,45 @@ to generate a new one.
 The website uses webpack to convert ES6 into ES5 code. To compile just run
 
 `webpack`
+
+## Branching
+
+The branching strategy is based on the suggested [strategy by Microsoft](https://docs.microsoft.com/en-us/vsts/git/concepts/git-branching-guidance).
+
+For features/pages, use the branching naming convention of `feature/[description]`.
+For fixes, use `fix/[description]` or for hotfixes, `hotfix/[description]`.
+
+Use pull requests to merge new feature branches into the master branch.
+
+## Coding Conventions
+
+### HTML5 & CSS3
+
+The coding conventions for this project are based upon [Googles HTML5 & CSS3 style guide](https://google.github.io/styleguide/htmlcssguide.html).
+
+JavaScript coding considerations are based upon [Googles JavaScript style guide](https://google.github.io/styleguide/jsguide.html).
+
+#### Indentation
+
+While Google recommends 2 spaces for HTML5 & CCS3, for this project, 2 spaces are used for CSS files and 4 for HTML files. This is a personal preference as I find HTML code much easier to read and understand with 4.
+
+JavaScript files should use 2 spaces for indentation.
+
+#### Whitespace
+
+Remove trailing whitespace.
+
+#### Comment Code
+
+Comment code in CSS to split styling for the relavent sections so it is easier to understand what is being styled, however, properly naming elements should help with this too. HTML code should be commented to show where elements end if not clear.
+
+JavaScript code should be clearly commented to show what each part does, giving a simple description.
+
+#### Naming Conventions
+
+All ID and class names should be lowercase, using underscores to seperate words (eg. `contact_form`). Names given must be appriorate and help to describe what the element is.
+
+For methods, variables and package names, lowerCamelCase should be used. For class names, UpperCamelCase is to be used in JavaScript.
 
 ## Design 
 
