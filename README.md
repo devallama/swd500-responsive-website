@@ -1,5 +1,8 @@
 # Responsive Portfolio for SWD500
 
+(Respority)[https://github.com/nickallama/swd500-responsive-website]
+(GitPages website)[https://nickallama.github.io/swd500-responsive-website/src/index.html]
+
 ## Introduction
 
 The aim of this project is to produce a 6-page website, in this case a portfolio for myself, using HTML5, CSS3 and JavaScript. The website must be fully responsive, being fully accessible in desktop, tablet and mobile devices. 
