@@ -142,7 +142,10 @@ body {
   .blogpost aside {
     padding-top: 2rem;
     float: none !important;
-    width: 100% !important; } }
+    width: 100% !important; }
+
+  #form_contact > * {
+    width: 60% !important; } }
 @media screen and (max-width: 480px) {
   #nav-right {
     display: none; }
@@ -169,7 +172,10 @@ body {
     width: 80% !important; }
 
   .comment_container {
-    width: 80% !important; } }
+    width: 80% !important; }
+
+  #form_contact > * {
+    width: 90% !important; } }
 p {
   font-size: 1rem;
   line-height: 2rem; }

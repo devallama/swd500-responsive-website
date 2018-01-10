@@ -65,6 +65,12 @@ body {
       width: 100% !important;
     }
   }
+
+  #form_contact {
+    >* {
+      width: 60% !important;
+    }
+  }
 }
 
 @media screen and (max-width: $mobile-break) {
@@ -104,6 +110,12 @@ body {
 
   .comment_container {
     width: 80% !important;
+  }
+
+  #form_contact {
+    >* {
+      width: 90% !important;
+    }
   }
 }
 
