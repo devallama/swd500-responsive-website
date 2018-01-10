@@ -232,7 +232,7 @@ main#home {
   margin: 0;
   background-image: url(../imgs/bg.png);
   background-size: cover;
-  height: 80vh;
+  height: 75vh;
   width: 100vw;
   color: #fff; }
   main#home .text_overlay {
@@ -247,7 +247,8 @@ main#home {
 
 nav#nav_bottom {
   list-style: none;
-  text-align: center; }
+  text-align: center;
+  background: none; }
   nav#nav_bottom li {
     display: inline-block;
     border-bottom: 1px solid #ff17e1;
@@ -255,7 +256,6 @@ nav#nav_bottom {
     margin: 0 4rem; }
     nav#nav_bottom li a {
       text-decoration: none;
-      padding: 50px 0;
       color: #424242;
       font-size: 1.3rem; }
 

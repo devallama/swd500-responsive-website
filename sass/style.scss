@@ -202,7 +202,7 @@ main#home {
   margin: 0;
   background-image: url(../imgs/bg.png);
   background-size: cover;  
-  height: 80vh;
+  height: 75vh;
   width: 100vw;
   color: #fff;
 
@@ -223,6 +223,7 @@ main#home {
 nav#nav_bottom {
   list-style: none;
   text-align: center;
+  background: none;
 
   li {
     display: inline-block;
@@ -232,7 +233,6 @@ nav#nav_bottom {
 
     a {
       text-decoration: none;
-      padding: 50px 0;
       color: #424242;
       font-size: 1.3rem;
     }
