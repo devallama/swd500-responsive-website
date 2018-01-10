@@ -17,9 +17,7 @@ body {
   margin: auto auto; }
 
 [class*='col-'] {
-  float: left;
-  height: 100px;
-  border: 2px solid #ffffff; }
+  float: left; }
 
 .col-1 {
   width: 5.55556%; }
@@ -405,5 +403,28 @@ main.blogpost {
           font-style: italic; }
     main.blogpost aside .comments .comment_content {
       padding: 0.4rem; }
+
+/* projects page */
+.project img {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  padding: 2rem 0; }
+.project .project_info .project_desc {
+  display: none; }
+.project h2 {
+  text-align: left; }
+.project.collapsed {
+  background-color: #E1E1E1; }
+  .project.collapsed h2 {
+    margin-top: 14%; }
+.project.collapsed:last-child {
+  background-color: #EBEBEB; }
+.project.selected img {
+  width: 100%; }
+.project.selected .project_info {
+  padding: 0 50px; }
+  .project.selected .project_info .project_desc {
+    display: block; }
 
 /*# sourceMappingURL=style.css.map */

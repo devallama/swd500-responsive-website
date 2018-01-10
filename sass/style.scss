@@ -30,8 +30,6 @@ body {
 
 [class*='col-'] {
   float: left;
-  height: 100px;
-  border: 2px solid #ffffff;
 }
 
 @for $i from 1 through $max_cols {
@@ -470,6 +468,55 @@ main.blogpost {
 
       .comment_content {
         padding: 0.4rem;
+      }
+    }
+  }
+}
+
+/* projects page */
+
+.project {
+  img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+
+  .project_info {
+
+    .project_desc {
+      display: none;
+    }
+  }
+
+  h2 {
+    text-align: left;
+    
+  }
+
+  &.collapsed {
+    background-color: #E1E1E1;
+
+    h2 {
+      margin-top: 14%;
+    }
+  }
+
+  &.collapsed:last-child {
+    background-color: #EBEBEB;
+  }
+
+  &.selected {
+    img {
+      width: 100%;
+    }
+
+    .project_info {
+      padding: 0 50px;
+      
+      .project_desc {
+        display: block;
       }
     }
   }
