@@ -44,11 +44,47 @@ body {
 
 /* Break points */
 @media screen and (max-width: $tablet-break) {
+  #nav_right {
+    display: none;
+  }
 
+  #nav_left {
+    width: calc(100% - 90px) !important;
+  }
 }
 
 @media screen and (max-width: $mobile-break) {
+  #nav-right {
+    display: none;
+  }
 
+  #nav_left {
+    display: none;
+
+    li {
+      display: block;
+      padding: 0.6rem 0!important;
+    }
+  }
+
+  .nav_icon {
+    height: 48px!important;
+  }
+
+  nav {
+    &:hover > #nav_left {
+      display: block;
+    }
+  }
+
+  .mobile_nav_icon {
+    display: block!important;
+    float: right;
+    height: 26px;
+    margin: 20px;
+
+    
+  }
 }
 
 p {
@@ -111,6 +147,10 @@ nav {
   background-color: #4f4f4f;
   position: relative;
 
+  .mobile_nav_icon {
+    display: none;
+  }
+
   .nav_icon {
     position: absolute;
     z-index: 2;
@@ -129,10 +169,10 @@ nav {
   }
 
   #nav_left {
-    width: 45%;
+    width: calc(70% - 90px);
     float: left;
     font-size: 1.3rem;
-    margin-left: 5%;
+    margin-left: 90px;
 
     li {
       padding: 1.2rem 0;
@@ -149,7 +189,7 @@ nav {
   #nav_right {
     list-style: none;
     float: right;
-    width: 50%;
+    width: 30%;
     text-align: right;
     padding: 1.2rem 0;
     
