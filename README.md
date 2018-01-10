@@ -1,5 +1,9 @@
 # Responsive Portfolio for SWD500
 
+## Introduction
+
+The aim of this project is to produce a 6-page website, in this case a portfolio for myself, using HTML5, CSS3 and JavaScript. The website must be fully responsive, being fully accessible in desktop, tablet and mobile devices. 
+
 ## Design 
 
 ### Lowfi Wireframes
