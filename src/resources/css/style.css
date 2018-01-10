@@ -169,16 +169,24 @@ main h3 {
 
 nav {
   overflow: auto;
-  background-color: #4f4f4f; }
+  background-color: #4f4f4f;
+  position: relative; }
+  nav .nav_icon {
+    position: absolute;
+    z-index: 2;
+    height: 64px;
+    bottom: 10px;
+    left: 30px; }
   nav ul {
     list-style: none;
     padding: 0; }
     nav ul li {
       display: inline-block; }
   nav #nav_left {
-    width: 50%;
+    width: 45%;
     float: left;
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    margin-left: 5%; }
     nav #nav_left li {
       padding: 1.2rem 0;
       margin: 0 1rem; }
@@ -190,7 +198,8 @@ nav {
     list-style: none;
     float: right;
     width: 50%;
-    text-align: right; }
+    text-align: right;
+    padding: 1.2rem 0; }
     nav #nav_right li {
       display: inline; }
     nav #nav_right img {
