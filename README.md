@@ -4,6 +4,36 @@
 
 The aim of this project is to produce a 6-page website, in this case a portfolio for myself, using HTML5, CSS3 and JavaScript. The website must be fully responsive, being fully accessible in desktop, tablet and mobile devices. 
 
+## Building Website
+
+### Git
+
+1. Add the respority link to git
+
+`git remote add origin "https://github.com/nickallama/swd500-responsive-website.git"`
+
+2. Fetch the respority
+
+`git fetch origin`
+
+3. Created a new branch 
+
+`git checkout -b [branch]`
+
+### NPM
+
+1. To install required npm modules just use:
+
+`npm install`
+
+### SASS
+
+1. The generated CSS file from SASS is already included, but you can use:
+
+`sass --watch sass/style.scss:src/resources/css/style.css`
+
+to generate a new one.
+
 ## Design 
 
 ### Lowfi Wireframes
