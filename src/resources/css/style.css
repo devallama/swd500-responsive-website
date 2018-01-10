@@ -471,11 +471,18 @@ main.blogpost {
       padding: 1rem;
       margin: 0 auto;
       overflow: auto; }
+      main.blogpost aside .commentbox h5 {
+        margin: 10px 0; }
       main.blogpost aside .commentbox textarea {
         width: 100%;
-        border: none;
         height: 100px;
-        resize: none; }
+        resize: none;
+        border: 1px solid grey; }
+      main.blogpost aside .commentbox input[type="text"] {
+        float: left;
+        width: 100%;
+        margin: 10px 0;
+        padding: 4px; }
       main.blogpost aside .commentbox input {
         display: block;
         float: right; }

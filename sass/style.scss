@@ -571,11 +571,22 @@ main.blogpost {
       margin: 0 auto;
       overflow: auto;
 
+      h5 {
+        margin: 10px 0;
+      }
+
       textarea {
         width: 100%;
-        border: none;
         height: 100px;
         resize: none;
+        border: 1px solid grey;
+      }
+
+      input[type="text"] {
+        float: left;
+        width: 100%;
+        margin: 10px 0;
+        padding: 4px;
       }
 
       input {
