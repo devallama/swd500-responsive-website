@@ -6,6 +6,18 @@ $single_col: $max_width / $max_cols;
 $mobile_break: 480px;
 $tablet_break: 768px;
 
+/* SASS Colour Variables */
+
+$white: #ffffff;
+$purple: #ff17e1;
+$black: #282828;
+$dark_grey: #4f4f4f;
+$light_grey: #c1c1c1;
+$lighter_grey: #EBEBEB;
+
+
+//                        //
+
 body {
   padding: 0;
   margin: 0;
@@ -45,6 +57,10 @@ body {
 
 /* Break points */
 @media screen and (max-width: $tablet-break) {
+  html {
+    font-size: 18px;
+  }
+
   /* Navigation */
   #nav_right {
     display: none;
@@ -59,7 +75,7 @@ body {
     section {
       float: none !important;
       width: 100% !important;
-      word-break: break-all;
+      word-wrap: break-word;
     }
 
     aside {
@@ -78,6 +94,10 @@ body {
 }
 
 @media screen and (max-width: $mobile-break) {
+  html {
+    font-size: 19px;
+  }
+
   [class*='col-'] { 
     width: 100%;
   }
@@ -120,6 +140,10 @@ body {
 
   .comment_container {
     width: 80% !important;
+  }
+
+  main.blogpost section{
+    padding: 0 4% !important;
   }
 
   /* Contact */
@@ -181,8 +205,20 @@ h3 {
   line-height: 1.8rem;
 }
 
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+}
+
 a {
-  color: #ff17e1;
+  color: $purple;
   text-decoration: none;
 
   &:hover {
@@ -201,7 +237,7 @@ main {
 }
 
 .purple {
-  color: #ff17e1;
+  color: $purple;
 }
 
 .center {
@@ -209,7 +245,7 @@ main {
 }
 
 .underline {
-  border-bottom: 8px solid #ff17e1;
+  border-bottom: 8px solid $purple;
 }
 
 .serif {
@@ -220,7 +256,7 @@ main {
 
 nav {
   overflow: auto;
-  background-color: #4f4f4f;
+  background-color: $dark_grey;
   position: relative;
 
   .mobile_nav_icon {
@@ -256,7 +292,7 @@ nav {
     }
 
     a {
-      color: #ffffff;
+      color: $white;
       font-variant: small-caps;
       text-decoration: none;
     }
@@ -289,8 +325,8 @@ nav {
 /* Footer */
 
 footer {
-  background-color: #282828;
-  color: #ffffff;
+  background-color: $black;
+  color: $white;
   text-align: center;
   padding: 5vh;
 
@@ -320,7 +356,7 @@ footer {
 /* Home */
 
 .home_nav {
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 main#home {
@@ -328,7 +364,7 @@ main#home {
   background-image: url(../imgs/bg.png);
   background-size: cover;  
   height: 75vh;
-  color: #fff;
+  color: $white;
 
   .text_overlay {
     padding-top: 30vh;
@@ -351,13 +387,13 @@ nav#nav_bottom {
 
   li {
     display: inline-block;
-    border-bottom: 1px solid #ff17e1; 
+    border-bottom: 1px solid $purple; 
     padding: 20px 0;
     margin: 0 4rem;
 
     a {
       text-decoration: none;
-      color: #424242;
+      color: $dark_grey;
       font-size: 1.3rem;
     }
   }
@@ -431,14 +467,14 @@ main {
 input[type="submit"] {
   width: 120px!important;
   border: none;
-  background-color: #282828;
-  color: #ffffff;
+  background-color: $black;
+  color: $white;
   border-radius: none;
   padding: 0.7rem 0;
   cursor: pointer;
 
   &:hover {
-    background-color: #424242;
+    background-color: $dark_grey;
   }
 }
 
@@ -569,18 +605,18 @@ main.blogpost {
   aside {
     float: right;
     width: 30%;
-    background-color: #c1c1c1;
+    background-color: $light_grey;
     padding-bottom: 15vh;
 
     h4 {
-      border-left: 8px solid #ff17e1;
+      border-left: 8px solid $purple;
       display: block;
       width: 60%;
       margin: 2rem auto;
     }
 
     .commentbox {
-      background-color: #ffffff;
+      background-color: $white;
       width: 60%;
       padding: 1rem;
       margin: 0 auto;
@@ -594,7 +630,7 @@ main.blogpost {
         width: 100%;
         height: 100px;
         resize: none;
-        border: 1px solid grey;
+        border: 1px solid $light_grey;
       }
 
       input[type="text"] {
@@ -616,7 +652,7 @@ main.blogpost {
       .comment_container {
         margin: 2rem auto;
         width: 60%;
-        background-color: #ffffff;
+        background-color: $white;
         padding: 1rem;
 
         .comment_top {
@@ -666,7 +702,7 @@ main.blogpost {
   }
 
   &.collapsed {
-    background-color: #E1E1E1;
+    background-color: $light_grey;
     cursor: pointer;
 
     h2 {
@@ -675,7 +711,7 @@ main.blogpost {
   }
 
   &.collapsed:nth-child(2n) {
-    background-color: #EBEBEB;
+    background-color: $lighter_grey;
   }
 
   &.selected {
