@@ -282,6 +282,10 @@ footer {
   color: #ffffff;
   text-align: center;
   padding: 5vh; }
+  footer img {
+    width: 74px;
+    padding: 20px;
+    height: auto; }
   footer ul {
     list-style: none;
     padding: 0; }
