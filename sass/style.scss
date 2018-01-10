@@ -14,6 +14,7 @@ body {
 
 /* For creating responsive grid */
 
+/* Set border-box on all elements, means padding does not affect width/height */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -44,6 +45,7 @@ body {
 
 /* Break points */
 @media screen and (max-width: $tablet-break) {
+  /* Navigation */
   #nav_right {
     display: none;
   }
@@ -52,6 +54,7 @@ body {
     width: calc(100% - 90px) !important;
   }
 
+  /* Blog */
   .blogpost {
     section {
       float: none !important;
@@ -66,6 +69,7 @@ body {
     }
   }
 
+  /* Contact */
   #form_contact {
     >* {
       width: 60% !important;
@@ -74,6 +78,11 @@ body {
 }
 
 @media screen and (max-width: $mobile-break) {
+  [class*='col-'] { 
+    width: 100%;
+  }
+
+  /* Navigation */
   #nav-right {
     display: none;
   }
@@ -104,6 +113,7 @@ body {
     margin: 20px;
   }
 
+  /* Blog post page */
   .commentbox {
     width: 80% !important;
   }
@@ -112,12 +122,14 @@ body {
     width: 80% !important;
   }
 
+  /* Contact */
   #form_contact {
     >* {
       width: 90% !important;
     }
   }
 
+  /* for main/home page */
   main {
     margin: 2vh 4vw!important;
 
@@ -126,6 +138,7 @@ body {
     }
   }
 
+  /* project */
   .project {
     h2 {
       text-align: center!important;
@@ -136,10 +149,7 @@ body {
     }
   }
   
-  [class*='col-'] { 
-    width: 100%;
-  }
-
+  /* About */
   #about {
     section {
       img {
@@ -206,6 +216,8 @@ main {
   font-family: 'Lora', serif;
 }
 
+/* Navigation styling */
+
 nav {
   overflow: auto;
   background-color: #4f4f4f;
@@ -268,9 +280,13 @@ nav {
   } 
 }
 
+/* Styling for flexbox containers */
+
 .flex_container {
   display: flex;
 }
+
+/* Footer */
 
 footer {
   background-color: #282828;
@@ -300,7 +316,6 @@ footer {
     
   }
 }
-
 
 /* Home */
 

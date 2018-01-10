@@ -4,6 +4,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif; }
 
 /* For creating responsive grid */
+/* Set border-box on all elements, means padding does not affect width/height */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -129,12 +130,14 @@ body {
 
 /* Break points */
 @media screen and (max-width: 768px) {
+  /* Navigation */
   #nav_right {
     display: none; }
 
   #nav_left {
     width: calc(100% - 90px) !important; }
 
+  /* Blog */
   .blogpost section {
     float: none !important;
     width: 100% !important;
@@ -144,9 +147,14 @@ body {
     float: none !important;
     width: 100% !important; }
 
+  /* Contact */
   #form_contact > * {
     width: 60% !important; } }
 @media screen and (max-width: 480px) {
+  [class*='col-'] {
+    width: 100%; }
+
+  /* Navigation */
   #nav-right {
     display: none; }
 
@@ -168,28 +176,30 @@ body {
     height: 26px;
     margin: 20px; }
 
+  /* Blog post page */
   .commentbox {
     width: 80% !important; }
 
   .comment_container {
     width: 80% !important; }
 
+  /* Contact */
   #form_contact > * {
     width: 90% !important; }
 
+  /* for main/home page */
   main {
     margin: 2vh 4vw !important; }
     main#home {
       margin: 0 !important; }
 
+  /* project */
   .project h2 {
     text-align: center !important; }
   .project .project_info {
     padding: 0 20px !important; }
 
-  [class*='col-'] {
-    width: 100%; }
-
+  /* About */
   #about section img {
     float: none !important;
     display: block !important;
@@ -233,6 +243,7 @@ main h3 {
 .serif {
   font-family: 'Lora', serif; }
 
+/* Navigation styling */
 nav {
   overflow: auto;
   background-color: #4f4f4f;
@@ -274,9 +285,11 @@ nav {
       height: 32px;
       padding: 0 20px; }
 
+/* Styling for flexbox containers */
 .flex_container {
   display: flex; }
 
+/* Footer */
 footer {
   background-color: #282828;
   color: #ffffff;

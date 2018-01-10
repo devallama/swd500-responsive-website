@@ -1,8 +1,10 @@
+/* Imports for vue */
 import Vue from 'vue';
 import VeeValidate from 'vee-validate';
 import VueFire from 'vuefire';
 import Firebase from 'firebase';
 
+/* Config for firebase */
 let config = {
   apiKey: "AIzaSyCE41CQIHdgCbQcfaPoIUJmuxcb5HZqXB8",
   authDomain: "portfolio-3f33e.firebaseapp.com",
@@ -12,15 +14,22 @@ let config = {
   messagingSenderId: "118457206765"
 };
 
+/* Initialise firebase */
 let firebaseApp = Firebase.initializeApp(config);
+/* get the firebase database */
 let db = firebaseApp.database();
 
+/* Contact database reference */
 let contactRef = db.ref('contact');
+/* Comments database reference */
 let commentsRef = db.ref('comments');
 
+/* Use veevalidate for form validation */
 Vue.use(VeeValidate); 
+/* Use vuefire for firebase integration */
 Vue.use(VueFire);
 
+/* Contact form component */
 Vue.component('contact-form', {
   template: ` <form class="formcontainer" id="form_contact">
                   <label for="email">Email</label>
@@ -38,6 +47,7 @@ Vue.component('contact-form', {
                   <input type="submit" value="send" v-on:click="submitForm">
               </form>`,
   data: function() {
+    /* Contact form data */
     return {
       newContact: {
         email: '',
@@ -48,18 +58,26 @@ Vue.component('contact-form', {
   },
   methods: {
     submitForm: function(e) {
+      /* Prevent default submit button behaviour */
       e.preventDefault();
+      /* Validate all fields */
       this.$validator.validateAll().then(res=>{
+        /* if validates */
         if(res) {
+          /* Push data to database */
           contactRef.push(this.newContact);
+          /* Reset fields */
           this.newContact.email = '';
           this.newContact.name = '';
           this.newContact.message = '';
+          /* Reset form validation, has to be called on next tick */
           this.$nextTick(() => {
             this.$validator.reset();
           });
+          /* Add a success message to the form */
           document.getElementById('form_contact').innerHTML = '<div class="success">Successfully submitted!</div>' + document.getElementById('form_contact').innerHTML;
         } else {
+          /* Did not validate */
           return;
         }
       });
@@ -70,6 +88,7 @@ Vue.component('contact-form', {
   }
 });
 
+/* Component reply box */
 Vue.component('reply-box', {
   template: ` <div class="commentbox">
                 <h5>Leave a comment</h5>      
@@ -80,6 +99,7 @@ Vue.component('reply-box', {
                 </div>
               </div>`,
   data: function() {
+    /* Comment data */
     return {
       newComment: {
         name: '',
@@ -90,17 +110,23 @@ Vue.component('reply-box', {
   },
   methods: {
     submitComment: function(e) {
+      /* Prevent default submit button behaviour */
       e.preventDefault();
+      /* Validate all fields */
       this.$validator.validateAll().then(res=>{
+        /* If validates correctly */
         if(res) {
-          console.log("called");
+          /* push data to database */
           commentsRef.push(this.newComment);
+          /* Reset fields */
           this.newComment.name = '';
           this.newComment.message = '';
+          /* reset validator on next tick */
           this.$nextTick(() => {
             this.$validator.reset();
           });
         } else {
+          /* validation failed, return */
           return;
         }
       });
@@ -111,7 +137,9 @@ Vue.component('reply-box', {
   }
 });
 
+/* Component comments */
 Vue.component('comments', {
+  /* Loops through comments data, display it on the page */
   template: `
     <div class="comments">
       <div class="comment_container" v-for="comment in comments">
@@ -131,11 +159,6 @@ Vue.component('comments', {
       </div>
     </div>
   `,
-  methods: {
-      removeUser: function(comment) {
-        commentsRef.child(comment['.key']).remove();
-      }
-  },
   firebase: {
       comments: commentsRef
   }
