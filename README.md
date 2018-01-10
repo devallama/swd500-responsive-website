@@ -34,6 +34,12 @@ The aim of this project is to produce a 6-page website, in this case a portfolio
 
 to generate a new one.
 
+### Webpack
+
+The website uses webpack to convert ES6 into ES5 code. To compile just run
+
+`webpack`
+
 ## Design 
 
 ### Lowfi Wireframes
