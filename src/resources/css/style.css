@@ -175,7 +175,18 @@ body {
     width: 80% !important; }
 
   #form_contact > * {
-    width: 90% !important; } }
+    width: 90% !important; }
+
+  main {
+    margin: 2vh 4vw !important; }
+
+  .project h2 {
+    text-align: center !important; }
+  .project .project_info {
+    padding: 0 20px !important; }
+
+  [class*='col-'] {
+    width: 100%; } }
 p {
   font-size: 1rem;
   line-height: 2rem; }
@@ -486,10 +497,11 @@ main.blogpost {
 .project h2 {
   text-align: left; }
 .project.collapsed {
-  background-color: #E1E1E1; }
+  background-color: #E1E1E1;
+  cursor: pointer; }
   .project.collapsed h2 {
     margin-top: 14%; }
-.project.collapsed:last-child {
+.project.collapsed:nth-child(2n) {
   background-color: #EBEBEB; }
 .project.selected img {
   width: 100%; }

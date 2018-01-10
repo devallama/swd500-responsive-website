@@ -117,6 +117,24 @@ body {
       width: 90% !important;
     }
   }
+
+  main {
+    margin: 2vh 4vw!important;
+  }
+
+  .project {
+    h2 {
+      text-align: center!important;
+    }
+
+    .project_info {
+      padding: 0 20px!important;
+    }
+  }
+  
+  [class*='col-'] { 
+    width: 100%;
+  }
 }
 
 p {
@@ -582,6 +600,7 @@ main.blogpost {
 /* projects page */
 
 .project {
+
   img {
     width: 60%;
     display: block;
@@ -603,13 +622,14 @@ main.blogpost {
 
   &.collapsed {
     background-color: #E1E1E1;
+    cursor: pointer;
 
     h2 {
       margin-top: 14%;
     }
   }
 
-  &.collapsed:last-child {
+  &.collapsed:nth-child(2n) {
     background-color: #EBEBEB;
   }
 
