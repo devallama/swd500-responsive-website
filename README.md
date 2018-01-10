@@ -1,8 +1,8 @@
 # Responsive Portfolio for SWD500
 
-(Respority)[https://github.com/nickallama/swd500-responsive-website]
+[Respority](https://github.com/nickallama/swd500-responsive-website)
 
-(GitPages website)[https://nickallama.github.io/swd500-responsive-website/src/index.html]
+[GitPages website](https://nickallama.github.io/swd500-responsive-website/src/index.html)
 
 ## Introduction
 
