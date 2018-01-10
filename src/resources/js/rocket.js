@@ -86,7 +86,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     queue.on("complete", init, this);
     queue.loadManifest([
         {
-            id: "rocket", src: "../imgs/rocket_sprites.png",
+            id: "rocket", src: "../resources/imgs/rocket_sprites.png",
         }
     ]);
 
