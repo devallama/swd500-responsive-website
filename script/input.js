@@ -138,7 +138,7 @@ Vue.component('reply-box', {
 });
 
 /* Component comments */
-Vue.component('comments', {
+Vue.component('comments-box', {
   /* Loops through comments data, display it on the page */
   template: `
     <div class="comments">

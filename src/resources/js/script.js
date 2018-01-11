@@ -14334,7 +14334,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('reply-box', {
 });
 
 /* Component comments */
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('comments', {
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('comments-box', {
   /* Loops through comments data, display it on the page */
   template: `
     <div class="comments">
