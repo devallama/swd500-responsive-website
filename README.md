@@ -83,7 +83,13 @@ All ID and class names should be lowercase, using underscores to seperate words 
 
 For methods, variables and package names, lowerCamelCase should be used. For class names, UpperCamelCase is to be used in JavaScript.
 
-## Design 
+## Design
+
+### Style Guide
+
+Style guide webpage visible [here](https://nickallama.github.io/swd500-responsive-website/styleguide/styleguide.html).
+
+![Style guide for portfolio](https://nickallama.github.io/swd500-responsive-website/styleguide/styleguide.png)
 
 ### Lowfi Wireframes
 
