@@ -402,15 +402,15 @@ main {
   height: 300px;
   resize: vertical; }
 
-.button {
+input[type="submit"] {
   width: 120px !important;
-  border: none;
+  border: 0;
   background-color: #282828;
   color: #ffffff;
-  border-radius: none;
+  border-radius: 0;
   padding: 0.7rem 0;
   cursor: pointer; }
-  .button:hover {
+  input[type="submit"]:hover {
     background-color: #4f4f4f; }
 
 .socialmedia_links_big ul {

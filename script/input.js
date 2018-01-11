@@ -44,7 +44,7 @@ Vue.component('contact-form', {
                   <textarea name="message" required v-model="newContact.message" v-validate="{required: true}"></textarea>
                   <span class="error" v-show="errors.has('message')">{{ errors.first('message') }}</span>
 
-                  <input type="submit" value="send" v-on:click="submitForm" class="button">
+                  <input type="submit" value="send" v-on:click="submitForm">
               </form>`,
   data: function() {
     /* Contact form data */
@@ -95,7 +95,7 @@ Vue.component('reply-box', {
                 <input name="name" type="text" placeholder="your name" v-model="newComment.name" v-validate="{required: true, regex: /[A-z]+/}">
                 <textarea name="comment" data-placeholder="true" v-model="newComment.message" v-validate="{required: true}">leave a comment</textarea>
                 <div class="commentbox_controls">
-                    <input type="submit" value="comment" v-on:click="submitComment" class="button">
+                    <input type="submit" value="comment" v-on:click="submitComment">
                 </div>
               </div>`,
   data: function() {

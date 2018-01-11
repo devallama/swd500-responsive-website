@@ -464,12 +464,12 @@ main {
   }
 }
 
-.button {
-  width: 120px!important;
-  border: none;
+input[type="submit"] {
+  width: 120px !important;
+  border: 0;
   background-color: $black;
   color: $white;
-  border-radius: none;
+  border-radius: 0;
   padding: 0.7rem 0;
   cursor: pointer;
 
@@ -643,6 +643,7 @@ main.blogpost {
       input {
         display: block;
         float: right;
+
       }
     }
 
