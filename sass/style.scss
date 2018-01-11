@@ -464,7 +464,7 @@ main {
   }
 }
 
-input[type="submit"] {
+.button {
   width: 120px!important;
   border: none;
   background-color: $black;
@@ -643,7 +643,6 @@ main.blogpost {
       input {
         display: block;
         float: right;
-
       }
     }
 
