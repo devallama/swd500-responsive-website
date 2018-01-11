@@ -1,0 +1,106 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'calibri', sans-serif;
+}
+
+#wrap {
+  padding: 0 20vw;
+}
+
+.flex_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  padding: 30px;
+}
+
+#colours .flex_container {
+  background-color: #e2e2e2;
+  padding: 20px;
+}
+
+#colours .box {
+  margin-right: 20px;
+}
+
+.white {
+  background-color: #ffffff;
+}
+
+.purple {
+  background-color: #ff17e1;
+}
+
+.black {
+  background-color: #282828;
+  color: #ffffff;
+}
+
+.dark_grey {
+  background-color: #4f4f4f;
+  color: #ffffff;
+}
+
+.light_grey {
+  background-color: #c1c1c1;
+}
+
+.lighter_grey {
+  background-color: #ebebeb;
+}
+
+input[type="submit"] {
+  width: 120px!important;
+  border: none;
+  background-color: #282828;
+  color: #ffffff;
+  border-radius: none;
+  padding: 0.7rem 0;
+  cursor: pointer;
+
+  
+}
+
+input[type="submit"]:hover {
+  background-color: #4f4f4f;
+}
+
+#icons .box {
+  background-color: #ebebeb;
+}
+
+#icons .box img{
+  height: 64px;
+}
+
+.sourcesans {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.lora {
+  font-family: 'Lora', serif;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
