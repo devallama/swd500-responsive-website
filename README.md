@@ -195,4 +195,10 @@ Blogpost
 
 ![Highfi desktop blogpost](https://nickallama.github.io/swd500-responsive-website/wireframes/mockup/desktop-blogpost.jpg)
 
+## Feedback
+
+You can submit feedback for the website using the form here: https://goo.gl/forms/QC8sqM9BcBKErCHA3
+
+There responses are available here: https://goo.gl/y68Ev1
+
 
