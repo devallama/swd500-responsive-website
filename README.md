@@ -199,6 +199,6 @@ Blogpost
 
 You can submit feedback for the website using the form here: https://goo.gl/forms/QC8sqM9BcBKErCHA3
 
-There responses are available here: https://goo.gl/y68Ev1
+The responses are available here: https://goo.gl/y68Ev1
 
 
