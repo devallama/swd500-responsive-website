@@ -1,8 +1,8 @@
 # Responsive Portfolio for SWD500
 
-[Respority](https://github.com/nickallama/swd500-responsive-website)
+[Respority](https://github.com/devallama/swd500-responsive-website)
 
-[GitPages website](https://nickallama.github.io/swd500-responsive-website/src/index.html)
+[GitPages website](https://devallama.github.io/swd500-responsive-website/src/index.html)
 
 ## Introduction
 
@@ -14,7 +14,7 @@ The aim of this project is to produce a 6-page website, in this case a portfolio
 
 1. Add the respority link to git
 
-`git remote add origin "https://github.com/nickallama/swd500-responsive-website.git"`
+`git remote add origin "https://github.com/devallama/swd500-responsive-website.git"`
 
 2. Fetch the respority
 
@@ -87,113 +87,113 @@ For methods, variables and package names, lowerCamelCase should be used. For cla
 
 ### Style Guide
 
-Style guide webpage visible [here](https://nickallama.github.io/swd500-responsive-website/styleguide/styleguide.html).
+Style guide webpage visible [here](https://devallama.github.io/swd500-responsive-website/styleguide/styleguide.html).
 
-![Style guide for portfolio](https://nickallama.github.io/swd500-responsive-website/styleguide/styleguide.png)
+![Style guide for portfolio](https://devallama.github.io/swd500-responsive-website/styleguide/styleguide.png)
 
 ### Lowfi Wireframes
 
 #### Mobile
 Home
 
-![Lowfi mobile home](https://nickallama.github.io/swd500-responsive-website/wireframes/lowfi/mobile-home.png)
+![Lowfi mobile home](https://devallama.github.io/swd500-responsive-website/wireframes/lowfi/mobile-home.png)
 
 About
 
-![Lowfi mobile about](https://nickallama.github.io/swd500-responsive-website/wireframes/lowfi/mobile-about.png)
+![Lowfi mobile about](https://devallama.github.io/swd500-responsive-website/wireframes/lowfi/mobile-about.png)
 
 Contact
 
-![Lowfi mobile contact](https://nickallama.github.io/swd500-responsive-website/wireframes/lowfi/mobile-contact.png)
+![Lowfi mobile contact](https://devallama.github.io/swd500-responsive-website/wireframes/lowfi/mobile-contact.png)
 
 Projects
 
-![Lowfi mobile project](https://nickallama.github.io/swd500-responsive-website/wireframes/lowfi/mobile-project.png)
+![Lowfi mobile project](https://devallama.github.io/swd500-responsive-website/wireframes/lowfi/mobile-project.png)
 
 Blog
 
-![Lowfi mobile blog](https://nickallama.github.io/swd500-responsive-website/wireframes/lowfi/mobile-blog.png)
+![Lowfi mobile blog](https://devallama.github.io/swd500-responsive-website/wireframes/lowfi/mobile-blog.png)
 
 Blogpost
 
-![Lowfi mobile blogpost](https://nickallama.github.io/swd500-responsive-website/wireframes/lowfi/mobile-blogpost.png)
+![Lowfi mobile blogpost](https://devallama.github.io/swd500-responsive-website/wireframes/lowfi/mobile-blogpost.png)
 
 #### Desktop
 Home
 
-![Lowfi desktop home](https://nickallama.github.io/swd500-responsive-website/wireframes/lowfi/desktop-home.png)
+![Lowfi desktop home](https://devallama.github.io/swd500-responsive-website/wireframes/lowfi/desktop-home.png)
 
 About
 
-![Lowfi desktop about](https://nickallama.github.io/swd500-responsive-website/wireframes/lowfi/desktop-about.png)
+![Lowfi desktop about](https://devallama.github.io/swd500-responsive-website/wireframes/lowfi/desktop-about.png)
 
 Contact
 
-![Lowfi desktop contact](https://nickallama.github.io/swd500-responsive-website/wireframes/lowfi/desktop-contact.png)
+![Lowfi desktop contact](https://devallama.github.io/swd500-responsive-website/wireframes/lowfi/desktop-contact.png)
 
 Projects
 
-![Lowfi desktop project](https://nickallama.github.io/swd500-responsive-website/wireframes/lowfi/desktop-project.png)
+![Lowfi desktop project](https://devallama.github.io/swd500-responsive-website/wireframes/lowfi/desktop-project.png)
 
 Blog
 
-![Lowfi desktop blog](https://nickallama.github.io/swd500-responsive-website/wireframes/lowfi/desktop-blog.png)
+![Lowfi desktop blog](https://devallama.github.io/swd500-responsive-website/wireframes/lowfi/desktop-blog.png)
 
 Blogpost
 
-![Lowfi desktop blogpost](https://nickallama.github.io/swd500-responsive-website/wireframes/lowfi/desktop-blogpost.png)
+![Lowfi desktop blogpost](https://devallama.github.io/swd500-responsive-website/wireframes/lowfi/desktop-blogpost.png)
 
 ### Highfi Wireframes
 
 #### Mobile
 Home
 
-![Highfi mobile home](https://nickallama.github.io/swd500-responsive-website/wireframes/mockup/mobile-home.jpg)
+![Highfi mobile home](https://devallama.github.io/swd500-responsive-website/wireframes/mockup/mobile-home.jpg)
 
 About
 
-![Highfi mobile about](https://nickallama.github.io/swd500-responsive-website/wireframes/mockup/mobile-about.jpg)
+![Highfi mobile about](https://devallama.github.io/swd500-responsive-website/wireframes/mockup/mobile-about.jpg)
 
 Contact
 
-![Highfi mobile contact](https://nickallama.github.io/swd500-responsive-website/wireframes/mockup/mobile-contact.jpg)
+![Highfi mobile contact](https://devallama.github.io/swd500-responsive-website/wireframes/mockup/mobile-contact.jpg)
 
 Projects
 
-![Highfi mobile project](https://nickallama.github.io/swd500-responsive-website/wireframes/mockup/mobile-project.jpg)
+![Highfi mobile project](https://devallama.github.io/swd500-responsive-website/wireframes/mockup/mobile-project.jpg)
 
 Blog
 
-![Highfi mobile blog](https://nickallama.github.io/swd500-responsive-website/wireframes/mockup/mobile-blog.jpg)
+![Highfi mobile blog](https://devallama.github.io/swd500-responsive-website/wireframes/mockup/mobile-blog.jpg)
 
 Blogpost
 
-![Highfi mobile blogpost](https://nickallama.github.io/swd500-responsive-website/wireframes/mockup/mobile-blogpost.jpg)
+![Highfi mobile blogpost](https://devallama.github.io/swd500-responsive-website/wireframes/mockup/mobile-blogpost.jpg)
 
 #### Desktop
 Home
 
-![Highfi desktop home](https://nickallama.github.io/swd500-responsive-website/wireframes/mockup/desktop-home.jpg)
+![Highfi desktop home](https://devallama.github.io/swd500-responsive-website/wireframes/mockup/desktop-home.jpg)
 
 About
 
-![Highfi desktop about](https://nickallama.github.io/swd500-responsive-website/wireframes/mockup/desktop-about.jpg)
+![Highfi desktop about](https://devallama.github.io/swd500-responsive-website/wireframes/mockup/desktop-about.jpg)
 
 Contact
 
-![Highfi desktop contact](https://nickallama.github.io/swd500-responsive-website/wireframes/mockup/desktop-contact.jpg)
+![Highfi desktop contact](https://devallama.github.io/swd500-responsive-website/wireframes/mockup/desktop-contact.jpg)
 
 Projects
 
-![Highfi desktop project](https://nickallama.github.io/swd500-responsive-website/wireframes/mockup/desktop-project.jpg)
+![Highfi desktop project](https://devallama.github.io/swd500-responsive-website/wireframes/mockup/desktop-project.jpg)
 
 Blog
 
-![Highfi desktop blog](https://nickallama.github.io/swd500-responsive-website/wireframes/mockup/desktop-blog.jpg)
+![Highfi desktop blog](https://devallama.github.io/swd500-responsive-website/wireframes/mockup/desktop-blog.jpg)
 
 Blogpost
 
-![Highfi desktop blogpost](https://nickallama.github.io/swd500-responsive-website/wireframes/mockup/desktop-blogpost.jpg)
+![Highfi desktop blogpost](https://devallama.github.io/swd500-responsive-website/wireframes/mockup/desktop-blogpost.jpg)
 
 ## Feedback
 
